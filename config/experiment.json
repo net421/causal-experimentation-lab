@@ -1,0 +1,21 @@
+{
+  "experiment_id": "SC-PRIORITY-REPLENISHMENT-001",
+  "seed": 423,
+  "sample_size_total": 500,
+  "allocation": "1:1 complete randomization",
+  "alpha": 0.05,
+  "minimum_practical_effect": 250.0,
+  "balance_smd_limit": 0.1,
+  "power": {
+    "planning_sigma": 800.0,
+    "target": 0.8
+  },
+  "robustness": {
+    "permutations": 2000
+  },
+  "data_generating_process": {
+    "gross_margin_effect": 475.0,
+    "stockout_rate_effect": -0.018,
+    "outcome_sigma": 800.0
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "registered_before_analysis": false,
+  "registration_scope": "synthetic portfolio demonstration; specification committed with the generated analysis, not externally or prospectively registered",
+  "hypotheses": [
+    {
+      "id": "H001",
+      "role": "primary",
+      "question": "Does priority replenishment increase 8-week gross margin per distribution center?",
+      "estimand": "Intention-to-treat average effect on post_gross_margin",
+      "estimator": "OLS ANCOVA with HC1 robust standard errors",
+      "covariates": [
+        "baseline_gross_margin",
+        "baseline_stockout_rate",
+        "capacity_index",
+        "region"
+      ],
+      "alpha": 0.05,
+      "minimum_practical_effect": 250.0,
+      "direction": "positive",
+      "success_rule": "estimate >= 250, 95% CI lower bound > 0, p <= 0.05, and all portfolio decision gates pass"
+    },
+    {
+      "id": "H002",
+      "role": "secondary",
+      "question": "Does priority replenishment reduce the 8-week stockout rate?",
+      "estimand": "Intention-to-treat average effect on post_stockout_rate",
+      "estimator": "OLS ANCOVA with HC1 robust standard errors",
+      "covariates": [
+        "baseline_gross_margin",
+        "baseline_stockout_rate",
+        "capacity_index",
+        "region"
+      ],
+      "alpha": 0.05,
+      "direction": "negative",
+      "success_rule": "reported with uncertainty as a secondary operational outcome; it cannot independently authorize action"
+    }
+  ]
+}

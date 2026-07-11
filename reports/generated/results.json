@@ -1,0 +1,184 @@
+{
+  "balance_standardized_mean_differences": {
+    "baseline_gross_margin": 0.04285412973130836,
+    "baseline_stockout_rate": -0.002247697469763472,
+    "capacity_index": -0.05919185027110554,
+    "region_east": 0.0,
+    "region_north": 0.0,
+    "region_south": 0.008950564679597142,
+    "region_west": -0.009219208924921294
+  },
+  "decision": {
+    "deployment_authorized": false,
+    "gates": {
+      "confidence_interval_excludes_zero": true,
+      "covariate_balance_within_limit": true,
+      "leave_one_region_out_effects_positive": true,
+      "planned_power_meets_target": true,
+      "point_estimate_meets_practical_threshold": true,
+      "primary_p_value_within_alpha": true,
+      "randomization_inference_supports_effect": true
+    },
+    "human_review_required": true,
+    "machine_status": "eligible_for_human_review"
+  },
+  "estimand": "intention-to-treat average effect on 8-week gross margin per distribution center",
+  "experiment_id": "SC-PRIORITY-REPLENISHMENT-001",
+  "limitations": [
+    "The data are synthetic and cannot establish an effect in a real operation.",
+    "Confidence intervals and p-values use large-sample normal approximations.",
+    "The analysis estimates intention-to-treat under the simulated random assignment.",
+    "Subgroup estimates are exploratory and are not multiplicity adjusted."
+  ],
+  "power": {
+    "actual_per_arm": 250,
+    "approximate_planned_power": 0.937471940769099,
+    "minimum_practical_effect": 250.0,
+    "planning_sigma": 800.0,
+    "required_per_arm": 161,
+    "target": 0.8
+  },
+  "primary": {
+    "adjusted": {
+      "ci_high": 497.3871090528538,
+      "ci_low": 217.5177381406215,
+      "estimate": 357.4524235967377,
+      "method": "ancova_ols_hc1",
+      "n": 500,
+      "p_value": 5.540630014740612e-07,
+      "standard_error": 71.39655961022915
+    },
+    "unadjusted": {
+      "ci_high": 639.6336278336443,
+      "ci_low": 160.00933051835966,
+      "estimate": 399.82147917600196,
+      "method": "difference_in_means_normal",
+      "n": 500,
+      "p_value": 0.0010842276665710253,
+      "standard_error": 122.35538537914472
+    }
+  },
+  "robustness": {
+    "classical_standard_error": {
+      "ci_high": 496.7818998570343,
+      "ci_low": 218.122947336441,
+      "estimate": 357.4524235967377,
+      "method": "ancova_ols_classical",
+      "n": 500,
+      "p_value": 4.947829990963749e-07,
+      "standard_error": 71.08777373426749
+    },
+    "leave_one_region_out": {
+      "east": {
+        "ci_high": 488.60704448310514,
+        "ci_low": 170.16034628456484,
+        "estimate": 329.383695383835,
+        "method": "ancova_hc1",
+        "n": 388,
+        "p_value": 5.0229354123853494e-05,
+        "standard_error": 81.23789536705964
+      },
+      "north": {
+        "ci_high": 529.5826514171279,
+        "ci_low": 212.62256117265815,
+        "estimate": 371.102606294893,
+        "method": "ancova_hc1",
+        "n": 374,
+        "p_value": 4.442609770180393e-06,
+        "standard_error": 80.8586516753906
+      },
+      "south": {
+        "ci_high": 497.51714843252677,
+        "ci_low": 155.58130530530326,
+        "estimate": 326.549226868915,
+        "method": "ancova_hc1",
+        "n": 363,
+        "p_value": 0.00018144793804878627,
+        "standard_error": 87.23013428419345
+      },
+      "west": {
+        "ci_high": 562.2819714524775,
+        "ci_low": 244.12146800551946,
+        "estimate": 403.20171972899846,
+        "method": "ancova_hc1",
+        "n": 375,
+        "p_value": 6.77563170276497e-07,
+        "standard_error": 81.16488516028038
+      }
+    },
+    "placebo_baseline_difference": {
+      "ci_high": 293.8139062745547,
+      "ci_low": -178.38286599455094,
+      "estimate": 57.7155201400019,
+      "method": "difference_in_means_normal",
+      "n": 500,
+      "p_value": 0.6318506047330782,
+      "standard_error": 120.46057376404202
+    },
+    "randomization_inference_null": "sharp_null_of_no_unit_level_treatment_effect",
+    "randomization_inference_p_value": 0.0014992503748125937,
+    "subgroup_unadjusted_effects": {
+      "east": {
+        "ci_high": 1174.8685978409012,
+        "ci_low": 246.85288990909964,
+        "estimate": 710.8607438750005,
+        "method": "difference_in_means",
+        "n": 112,
+        "p_value": 0.0026762436306031093,
+        "standard_error": 236.74305121213231
+      },
+      "north": {
+        "ci_high": 785.2637559715193,
+        "ci_low": -197.65344736834675,
+        "estimate": 293.8051543015863,
+        "method": "difference_in_means",
+        "n": 126,
+        "p_value": 0.2413130469191796,
+        "standard_error": 250.7487920933731
+      },
+      "south": {
+        "ci_high": 831.1610204662304,
+        "ci_low": -54.108702014828225,
+        "estimate": 388.5261592257011,
+        "method": "difference_in_means",
+        "n": 137,
+        "p_value": 0.08536457340787847,
+        "standard_error": 225.83826270889506
+      },
+      "west": {
+        "ci_high": 743.168641823657,
+        "ci_low": -252.49266339355398,
+        "estimate": 245.3379892150515,
+        "method": "difference_in_means",
+        "n": 125,
+        "p_value": 0.33409523207283365,
+        "standard_error": 253.99989823049316
+      }
+    },
+    "winsorized_outcome": {
+      "ci_high": 496.1727851027006,
+      "ci_low": 218.38180564260688,
+      "estimate": 357.2772953726537,
+      "method": "ancova_hc1_winsorized_1_99",
+      "n": 500,
+      "p_value": 4.617401039636366e-07,
+      "standard_error": 70.86634796640999
+    }
+  },
+  "sample": {
+    "control": 250,
+    "total": 500,
+    "treated": 250
+  },
+  "secondary": {
+    "stockout_rate_adjusted": {
+      "ci_high": -0.017316764123413673,
+      "ci_low": -0.020925609343173224,
+      "estimate": -0.01912118673329345,
+      "method": "ancova_ols_hc1",
+      "n": 500,
+      "p_value": 8.181569424772793e-96,
+      "standard_error": 0.0009206406975397657
+    }
+  }
+}

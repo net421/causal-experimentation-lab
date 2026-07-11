@@ -1,0 +1,9 @@
+{
+  "ci_runner": "ubuntu-24.04",
+  "numpy": "2.3.5",
+  "pip": "26.0.1",
+  "python_implementation": "CPython",
+  "python_version": "3.12.13",
+  "schema_version": 1,
+  "setuptools": "82.0.1"
+}

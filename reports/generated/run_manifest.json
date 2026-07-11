@@ -1,0 +1,94 @@
+{
+  "files": [
+    {
+      "bytes": 37328,
+      "path": "data/generated/experiment_units.csv",
+      "sha256": "907f5c54a7a90c97c75286e7177cff94d129171a07a855d46ac8981ae716f3da"
+    },
+    {
+      "bytes": 2590,
+      "path": "reports/generated/experiment_report.md",
+      "sha256": "dee3ed037cc15a403093be9b35ba02c5c02afe872ba1ca0a301285d34935bf1c"
+    },
+    {
+      "bytes": 1268,
+      "path": "reports/generated/human_review_packet.md",
+      "sha256": "04c792c961a3887f7c1ac49785dcc37e82620c386157d15fe9ffbb40ad13b7cc"
+    },
+    {
+      "bytes": 5873,
+      "path": "reports/generated/results.json",
+      "sha256": "5fffbebdd11b376195f7f41044d279959b384b5754fb88ebf78ffda161faa1ab"
+    },
+    {
+      "bytes": 856,
+      "path": "reports/generated/robustness_checks.csv",
+      "sha256": "d71eb15383e24f91ad1c384e5da94c27b564d4c0f71c3a7a4984f11eb5964fba"
+    }
+  ],
+  "manifest_version": 2,
+  "provenance": [
+    {
+      "bytes": 472,
+      "path": "config/experiment.json",
+      "sha256": "ca4548a1a9286404cc537c394cac105c90d5259cd5eae0e943993ab3011f6d03"
+    },
+    {
+      "bytes": 1476,
+      "path": "docs/hypotheses/register.json",
+      "sha256": "68eea86d96e0deddedf9ece69a258dee03167fcd2b0682ae56525ef7cf729c50"
+    },
+    {
+      "bytes": 510,
+      "path": "pyproject.toml",
+      "sha256": "36cc3846d4b4a9234f754d0ad397b1261ad35671d192f5d529d198c2c50dd7df"
+    },
+    {
+      "bytes": 44,
+      "path": "requirements-lock.txt",
+      "sha256": "4e6b671979c00e78ff88d1f85e2fe852d7f54e2ac3b8010c1ed6bfa63700eaf1"
+    },
+    {
+      "bytes": 191,
+      "path": "runtime-lock.json",
+      "sha256": "c37975ba5654035a437286ec974b2f00aa07414821ae297c23bce1d5fd56cbc4"
+    },
+    {
+      "bytes": 102,
+      "path": "src/causal_lab/__init__.py",
+      "sha256": "5c645a03cdffc976ec8243be3df42ac2b0eafd506e43b2e64f0b4bce4190850c"
+    },
+    {
+      "bytes": 7254,
+      "path": "src/causal_lab/analysis.py",
+      "sha256": "7bf72f40b340cc856b234854c306465d2aeef410d154e03ff0ceec2ee8138ad8"
+    },
+    {
+      "bytes": 2134,
+      "path": "src/causal_lab/cli.py",
+      "sha256": "ee4c84659d6b89c830aae98a1bbcc518d5a8c6b039fc539579f4785746be33c3"
+    },
+    {
+      "bytes": 4058,
+      "path": "src/causal_lab/data.py",
+      "sha256": "e3b9b765f80667ab4995b07c9707add9cef7640e435f58da165a3c4854a164d4"
+    },
+    {
+      "bytes": 7332,
+      "path": "src/causal_lab/reporting.py",
+      "sha256": "a6b3044e375925b93715aa5da060d4f7157eb1197fd9a4ffb28d7808b5306fd7"
+    },
+    {
+      "bytes": 4346,
+      "path": "src/causal_lab/statistics.py",
+      "sha256": "0c3c885649fe00dcd9dec854f3cda370fc4a03fa99cfe0cc8d034d000b3b9e83"
+    }
+  ],
+  "runtime": {
+    "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.12.47-x86_64-with-glibc2.39",
+    "python_implementation": "CPython",
+    "python_version": "3.12.13"
+  }
+}
